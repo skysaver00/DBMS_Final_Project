@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="http://bootstrapk.com/favicon.ico">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/starter-template.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-theme.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Recommend Page</title>
+</head>
+<body>
+<form method="POST" action="">
+    <h1>Recommendation</h1>
+    <h2>Best Seller! We Recommend Copies:{% for val in details %} {{ val[0], val[1] }} {% endfor %}</h2>
+    Movie Suggestions
+    <input type = "text" name = "AccountID"/> <- Type Account ID
+    <input type = "submit" class = "btn btn-info" name = "button" value = "Im Feeling Lucky"/>
+    <br>
+    Give Rating
+    <input type = "text" name = "MovieID"/> <- Type Movie ID. You should type Account ID too ↑↑↑.
+    <br>
+    Rating:
+    <label>
+        1<input type = "radio" class = "radio" name = "rating" value = "1"/>
+    </label>
+    <label>
+        2<input type = "radio" class = "radio" name = "rating" value = "2"/>
+    </label>
+    <label>
+        3<input type = "radio" class = "radio" name = "rating" value = "3"/>
+    </label>
+    <label>
+        4<input type = "radio" class = "radio" name = "rating" value = "4"/>
+    </label>
+    <label>
+        5<input type = "radio" class = "radio" name = "rating" value = "5"/>
+    </label>
+    <input type = "submit" class = "btn btn-primary" name = "button" value = "Give Rating"/>
+    <br>
+<br>
+OR... <input type = "submit" class = "btn btn-default" name = "button" value = "Go Back"/>
+</form>
+</body>
+</html>

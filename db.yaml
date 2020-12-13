@@ -1,0 +1,4 @@
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: '1990silver!'
+mysql_db: 'watch_network'

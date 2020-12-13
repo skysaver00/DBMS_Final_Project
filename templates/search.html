@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="http://bootstrapk.com/favicon.ico">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/starter-template.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-theme.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<h1>Search</h1>
+<h3>You can search here
+</h3>
+<form method="POST" action="">
+    Currently Held Movie
+    <input type = "text" name = "Current"/> <- Type AccountID
+    <br>
+    <input type = "submit" class = "btn btn-primary" name = "button" value = "Search Held Movie"/>
+    <br>
+    Queue of Movies
+    <input type = "text" name = "Queue"/> <- Type AccountID
+    <br>
+    <input type = "submit" class = "btn btn-success" name = "button" value = "Search Movie Queue"/>
+    <br>
+    Movie Type
+    <input type = "text" name = "MovieType"/> <- Type MovieType
+    <br>
+    <input type = "submit" class = "btn btn-danger" name = "button" value = "Search Movie Type"/>
+    <br>
+    Movie Containing Particular 'keyword' or 'keyword set'
+    <input type = "text" name = "Keyword"/> <- Type part of Movie Name
+    <br>
+    <input type = "submit" class = "btn btn-warning" name = "button" value = "Search Keyword"/>
+    <br>
+    Actor appearing What Movie?
+    <input type = "text" name = "FActor"/> <- First Name
+    <input type = "text" name = "LActor"/> <- Last Name
+    <br>
+    <input type = "submit" class = "btn btn-info" name = "button" value = "Search Actor"/>
+    <br>
+    <br>
+    <br>
+    OR... <input type = "submit" class = "btn btn-default" name = "button" value = "Go Back"/>
+</form>
+</body>
+</html>
